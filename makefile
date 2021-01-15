@@ -20,3 +20,6 @@ network:
 volumes:
 	docker volume create jenkins-log
 	docker volume create jenkins-data
+
+copy:
+	docker cp jenkins_master_1:/var/jenkins_home .jenkins-data
